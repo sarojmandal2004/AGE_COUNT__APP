@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #15202b;
+  --card: #192734;
+  --hover-color: #0061ad;
+  --primary-text: #ffffff;
+  --secondar-text: #8899a6;
+  --anent-color: #2294ed;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+  font-family: Verdana, Tahoma, sans-serif;
+}
+section {
+  width: 1180px;
+  margin: auto;
+  height: 100%;
+}
+
+.card {
+  width: 800px;
+  height: 400px;
+  /* position: relative; */
+  border-radius: 5px;
+  background-color: var(--card);
+  /* box-shadow: 1px 2px 5px var(--secondar-text); */
+  box-shadow: 0px 3px 18px 3px var(--hover-color);
+  align-items: center;
+  margin: auto;
+  margin-top: 6.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* transition: transform 1s;
+  transform-style: preserve-3d; */
+}
+
+.card .bold-text {
+  color: var(--secondar-text);
+  padding: 15px;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+input[type="date"] {
+
+  padding: 10px;
+  border: 1px solid var(--background);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--primary-text);
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: var(--anent-color);
+}
+input[type="date"]:hover {
+    
+    background-color:var(--hover-color);
+  }
+  
+
+ .button {
+    
+    padding: 8px 35px;
+    background-color: var(--anent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 12px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    
+    background-color:var(--hover-color);
+  }
+  
+.counter-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.counter-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-text h2{
+    color: var(--primary-text);
+    font-size: 3rem;
+}
+.hidden{
+    display: none;
+}
+.error .bold-text {
+    color: var(--secondar-text);
+    padding: 15px;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+  }

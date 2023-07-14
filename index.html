@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <section>
+      <div class="card">
+        <div class="" id="front">
+          <div class="bold-text">
+            <h1>Kindly Enter Your Date of Birth</h1>
+          </div>
+          <div class="total-input">
+            <!-- <form onsubmit="return false"> -->
+            <div class="form">
+              <input type="date" id="dobinput" name="dob" />
+              <!-- <input id="submit" type="button" value="Submit" /> -->
+              <button id="submit" class="button">Submit</button>
+            </div>
+            <!-- </form> -->
+          </div>
+        </div>
+        <div class="hidden" id="back">
+          <div class="bold-text">
+            <h1>How much Life Cover, Till Now</h1>
+          </div>
+          <div class="counter-container">
+            <div class="counter-text">
+              <h2 id="year">0</h2>
+              <h1 class="bold-text">Year</h1>
+            </div>
+            <div class="counter-text">
+              <h2 id="month">0</h2>
+              <h1 class="bold-text">Month</h1>
+            </div>
+            <div class="counter-text">
+              <h2 id="day">0</h2>
+              <h1 class="bold-text">Day</h1>
+            </div>
+            <div class="counter-text">
+              <h2 id="hour">0</h2>
+              <h1 class="bold-text">Hour</h1>
+            </div>
+            <div class="counter-text">
+              <h2 id="minute">0</h2>
+              <h1 class="bold-text">Minute</h1>
+            </div>
+            <div class="counter-text">
+              <h2 id="second">0</h2>
+              <h1 class="bold-text">Second</h1>
+            </div>
+          </div>
+          
+          <!-- </form> -->
+        </div>
+        <div class="error hidden " id="error">
+        <h1 class="bold-text">Please Enter A Valid Date Of Birth</h1>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
